@@ -9,7 +9,7 @@ release URLs.
 
 ## Why this repo exists
 
-The plugin source + the proxy + the knowledge-base data live in a
+The plugin source + the hosted plugin API + the knowledge-base data live in a
 private monorepo (`gridlineos/gridline-revit`). The in-plugin updater needs
 to fetch DLL zips without HTTP auth, so the artifacts are mirrored here
 where they can be served over public release URLs.
@@ -23,9 +23,9 @@ monorepo's CI on every `VERSION` bump.
 2. The monorepo's `.github/workflows/release.yml` builds Revit 2025 +
    Revit 2026 DLL zips.
 3. CI calls `gh release create v<VERSION>` against THIS repo with both
-   zips attached, then rewrites `proxy/api/version.ts` `MANIFEST` in the
+   zips attached, then rewrites `plugin-api/api/version.ts` `MANIFEST` in the
    monorepo so the plugin can discover the new version.
-4. Vercel redeploys the proxy with the new MANIFEST; the plugin's
+4. Vercel redeploys the plugin API with the new MANIFEST; the plugin's
    `X-Latest-Version` header surfaces the release on the next user request.
 
 No issues, no PRs — file those on the monorepo (private; ping the

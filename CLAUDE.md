@@ -10,9 +10,9 @@ bump. The in-plugin updater downloads from these public release URLs.
 Gridline is **four separate repos**, not a monorepo.
 
 - `gridline-revit/` — the Revit plugin monorepo: C# plugin in `src/`, the live
-  proxy in `proxy/` (Vercel `gridline-revit-proxy` → api.gridlineos.com). **Its CI
+  plugin API in `plugin-api/` (Vercel `gridline-revit-api` → api.gridlineos.com). **Its CI
   (`release.yml`) cuts the releases hosted here** and rewrites
-  `gridline-revit/proxy/api/version.ts` `MANIFEST` with the new download URLs.
+  `gridline-revit/plugin-api/api/version.ts` `MANIFEST` with the new download URLs.
 - `gridline-web/` — Next.js web product → gridline.sh.
 - `gridline-design-system/` — brand/UI tokens.
 - ~~`gridline-revit-proxy`~~ — **archived** standalone proxy repo (dead).
