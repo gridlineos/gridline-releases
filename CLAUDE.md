@@ -13,7 +13,7 @@ Gridline is **four separate repos**, not a monorepo.
   plugin API in `plugin-api/` (Vercel `gridline-revit-api` → api.gridlineos.com). **Its CI
   (`release.yml`) cuts the releases hosted here** and rewrites
   `gridline-revit/plugin-api/api/version.ts` `MANIFEST` with the new download URLs.
-- `gridline-web/` — Next.js web product → gridline.sh.
+- `gridline-web/` — Next.js web product → gridlineos.com.
 - `gridline-design-system/` — brand/UI tokens.
 - ~~`gridline-revit-proxy`~~ — **archived** standalone proxy repo (dead).
 
