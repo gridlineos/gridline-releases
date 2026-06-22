@@ -1,17 +1,17 @@
-# ada-copilot-releases
+# gridline-releases
 
-Public download host for the **[ADA Copilot for Revit](https://github.com/ibrahim0814/revit-ada-copilot)** plugin.
+Public download host for the **[Gridline for Revit](https://github.com/gridlineos/gridline-revit)** plugin.
 
-This repo holds **only the per-version `AdaCopilot-Revit2025-dlls.zip` /
-`AdaCopilot-Revit2026-dlls.zip` artifacts**, attached to a GitHub Release
+This repo holds **only the per-version `Gridline-Revit2025-dlls.zip` /
+`Gridline-Revit2026-dlls.zip` artifacts**, attached to a GitHub Release
 for each plugin version. The in-plugin update flow downloads from these
 release URLs.
 
 ## Why this repo exists
 
 The plugin source + the proxy + the knowledge-base data live in a
-private monorepo (`revit-ada-copilot`). The in-plugin updater needs to
-fetch DLL zips without HTTP auth, so the artifacts are mirrored here
+private monorepo (`gridlineos/gridline-revit`). The in-plugin updater needs
+to fetch DLL zips without HTTP auth, so the artifacts are mirrored here
 where they can be served over public release URLs.
 
 There is **no source code** here — only release assets pushed by the
