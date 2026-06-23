@@ -14,7 +14,7 @@ Gridline is **four separate repos**, not a monorepo.
   (`release.yml`) cuts the releases hosted here** and rewrites
   `gridline-revit/plugin-api/api/version.ts` `MANIFEST` with the new download URLs.
 - `gridline-web/` — Next.js web product → gridlineos.com.
-- `gridline-design-system/` — brand/UI tokens.
+- `gridline-web/packages/design-system/` — the in-repo brand/UI token package.
 - ~~`gridline-revit-proxy`~~ — **archived** standalone proxy repo (dead).
 
 Releases are titled "Gridline for Revit v<x.y.z>" (was "ADA Copilot" through
